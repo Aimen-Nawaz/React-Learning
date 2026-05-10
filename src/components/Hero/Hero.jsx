@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../PageLayout/Navbar'
 import Story from './Story'
+import About from '../About Us/About'
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
         <button className='btn'>Get Started</button>
         <button className='btn'>Learn More</button>
       </div>
+     
       <Story/>
+      <Navbar/>
     </div>
     
   )
