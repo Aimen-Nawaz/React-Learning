@@ -1,40 +1,44 @@
 import React from "react";
+import { contactContainer, contact, conatctSection, title, subTitle, contactBox, contactImage, contactForm } from '../../styel/Contact.module.css'
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h1 className="title">
-        Contact <span>Us</span>
-      </h1>
+    <section className={conatctSection}>
+      <div className={contactContainer}>
+        <h1 className={title}>
+          Contact <span>Us</span>
+        </h1>
 
-      <p className="subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit
-        suscipit egestas. Nunc eget congue ante.
-      </p>
+        <p className={subTitle}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit
+          suscipit egestas. Nunc eget congue ante.
+        </p>
 
-      <div className="contact-box">
-        
-        <div className="contact-image">
-        
-          <img src="/images/contact.png" alt="contacy" />
-    
-        </div>
+        <div className={contactBox}>
 
+          <div className={contactImage}>
 
-        <div className="contact-form">
-          <label>Full name</label>
-          <input type="text" placeholder="Enter your full name" />
+            <img src="/images/contact.png" alt="contacy" />
 
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
+          </div>
 
-          <label>Message</label>
-          <textarea placeholder="Enter your message"></textarea>
+          <div className={contact}>
+            <div className={contactForm}>
+              <label>Full name</label>
+              <input type="text" placeholder="Enter your full name" />
 
-          <button>Read More</button>
+              <label>Email</label>
+              <input type="email" placeholder="Enter your email" />
+
+              <label>Message</label>
+              <textarea placeholder="Enter your message"></textarea>
+
+              <button>Read More</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

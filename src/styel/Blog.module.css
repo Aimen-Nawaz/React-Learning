@@ -1,39 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-}
 
 
-.Blog-section {
-    width: 100%;
-    max-width: 1200px;
+.blogSection {
+    max-width: 1280px;
     margin: auto;
     padding: 60px 20px;
 }
 
 
-.Blog-heading {
+.blogHeading {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.Blog-heading h1 {
-    font-size: 60px;
-    color: #1d2340;
+.blogHeading h1 {
+    font-size: 70px;
+      color: #1f3b2c;
     margin-bottom: 15px;
+    font-weight: 700px;
 }
 
-.Blog-heading span {
+.blogHeading span {
     color: #2fb389;
 }
 
-.Blog-heading p {
+.blogHeading p {
     color: #666;
     font-size: 18px;
     line-height: 1.8;
@@ -41,7 +31,7 @@ body {
     margin: auto;
 }
 
-.Blog-cards {
+.blogCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -49,7 +39,7 @@ body {
 }
 
 
-.Blog-card {
+.blogCard {
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -59,7 +49,7 @@ body {
     flex-direction: column;
 }
 
-.Blog-card:hover {
+.blogCard:hover {
     transform: translateY(-10px);
 }
 
@@ -70,7 +60,7 @@ body {
     object-fit: cover;
 }
 
-.Blog-content {
+.blogContent {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -78,7 +68,7 @@ body {
 }
 
 
-.Blog-label {
+.blogLabel {
     display: inline-block;
     color: #2DA884;
     padding: 2px 18px;
@@ -87,7 +77,7 @@ body {
 }
 
 
-.Blog-content h2 {
+.blogContent h2 {
     font-size: 18px;
     color: #1d2340;
     line-height: 1.5;
@@ -96,13 +86,13 @@ body {
 }
 
 
-.Blog-icons {
+.blogIcons {
     display: flex;
     gap: 20px;
     margin-bottom: 15px;
 }
 
-.icon-box {
+.iconBox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -110,16 +100,16 @@ body {
     font-size: 14px;
 }
 
-/* TEXT */
-.Blog-text {
+
+.blogText {
     color: #666;
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* BUTTON */
-.Blog-content button {
+
+.blogContent button {
     margin-top: auto;
     width: 100%;
     padding: 16px;
@@ -132,27 +122,27 @@ body {
     transition: 0.3s;
 }
 
-.Blog-content button:hover {
+.blogContent button:hover {
     background: #239b76;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1000px) {
-    .Blog-cards {
+    .blogCards {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .Blog-heading h1 {
+    .blogHeading h1 {
         font-size: 45px;
     }
 }
 
 @media (max-width: 650px) {
-    .Blog-cards {
+    .blogCards {
         grid-template-columns: 1fr;
     }
 
-    .Blog-heading h1 {
+    .blogHeading h1 {
         font-size: 35px;
     }
 }

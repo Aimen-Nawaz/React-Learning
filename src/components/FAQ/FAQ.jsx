@@ -1,58 +1,22 @@
-// FAQ.jsx
+
 
 import React, { useState } from "react";
-import "../../styel/FAQ.css"
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-
+import faqData from "../../assets/faqData";
+import { faqQuestion, faqHeading, faqContainer, faqAnswer, faqBox, faqBoxActive, faqSection } from "../../styel/FAQ.module.css"
 const FAQ = () => {
 
   const [openIndex, setOpenIndex] = useState(0);
 
-  const faqData = [
-    {
-      question:
-        "Do you specialize in both residential and commercial landscaping?",
-      answer:
-        "Yes, we have extensive experience in both residential and commercial landscaping. Whether you need to enhance your home's curb appeal or create an inviting outdoor space for your business, we can help.",
-    },
-
-    {
-      question:
-        "Do you provide sustainable and eco-friendly landscaping options?",
-      answer:
-        "Yes, we provide eco-friendly landscaping solutions including water-saving irrigation systems and sustainable garden designs.",
-    },
-
-    {
-      question:
-        "How do I request a consultation or estimate for my landscaping project?",
-      answer:
-        "You can contact us through our website, email, or phone number to schedule a consultation for your landscaping project.",
-    },
-
-    {
-      question:
-        "What factors influence the cost of a landscaping project?",
-      answer:
-        "The cost depends on project size, materials, labor, design complexity, and maintenance requirements.",
-    },
-
-    {
-      question:
-        "How often should I schedule landscape maintenance services?",
-      answer:
-        "Landscape maintenance is usually recommended weekly or monthly depending on your garden size and needs.",
-    },
-  ];
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="faq-section">
+    <div className={faqSection}>
 
-      <div className="faq-heading">
+      <div className={faqHeading}>
         <h1>
           Frequently Asked <span>Questions</span>
         </h1>
@@ -64,16 +28,16 @@ const FAQ = () => {
         </p>
       </div>
 
-      <div className="faq-container">
+      <div className={faqContainer}>
 
         {faqData.map((item, index) => (
           <div
             key={index}
-            className={`faq-box ${openIndex === index ? "active" : ""}`}
+            className={`${faqBox} ${openIndex === index ? faqBoxActive : ""}`}
           >
 
             <div
-              className="faq-question"
+              className={faqQuestion}
               onClick={() => toggleFAQ(index)}
             >
               <h2>{item.question}</h2>
@@ -88,7 +52,7 @@ const FAQ = () => {
             </div>
 
             {openIndex === index && (
-              <div className="faq-answer">
+              <div className={faqAnswer}>
                 <p>{item.answer}</p>
               </div>
             )}

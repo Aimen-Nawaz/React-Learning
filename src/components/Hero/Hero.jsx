@@ -2,29 +2,31 @@ import React from 'react'
 import Navbar from '../PageLayout/Navbar'
 import Story from './Story'
 import About from '../About Us/About'
-
+import { hero, text, buttons, btn } from "../../styel/LandScaping.module.css"
 const Hero = () => {
   return (
 
-    <div className='hero'>
-        
-        
-        <Navbar />
+    <div className={hero}>
 
-        <div className="text">
+      <div className={text}>
         <h1>Garden of Distinction</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde pariatur dolor rem reprehenderit nulla consectetur nihil nostrum, iste libero ut enim perspiciatis, illo harum reiciendis molestiae culpa beatae?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde pariatur <br />iste libero ut enim perspiciatis,
+          illo harum reiciendis molestiae culpa beatae?
+        </p>
       </div>
 
-      <div className="buttons">
-        <button className='btn'>Get Started</button>
-        <button className='btn'>Learn More</button>
+      <div className={buttons}>
+        <button className={btn}>Get Started</button>
+        <button className={btn}>Learn More</button>
       </div>
-     
-      <Story/>
-      <Navbar/>
+
+      <Story />
+
+
     </div>
-    
+
+
   )
 }
 

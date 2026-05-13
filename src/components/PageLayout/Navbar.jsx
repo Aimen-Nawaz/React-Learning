@@ -1,19 +1,20 @@
 import React from 'react'
+import {navbar ,navLinks,navButtons,loginBtn,signupBtn} from '../../styel/Navbar.module.css'
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
+        <nav className={navbar}>
             <h1>EcoSculpt</h1>
-            <div className="nav-links">
+            <div className={navLinks}   >
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Pages</a></li>
                 </ul>
             </div>
-            <div className="nav-buttons">
-                <button className="login-btn">Login</button>
-                <button className="signup-btn">Sign Up</button>
+            <div className={navButtons}>
+                <button className={loginBtn}>Login</button>
+                <button className={signupBtn}>Sign Up</button>
             </div>
 
         </nav>

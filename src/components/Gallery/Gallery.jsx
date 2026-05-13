@@ -1,12 +1,12 @@
 import React from 'react'
-
+import {galleryContainer, highlight, galleryText,galleryImg,galleryImg1,galleryImg2,galleryImg3,galleryImg4,galleryImg5} from"../../styel/LandScaping.module.css"
 const Gallery = () => {
     return (
 
-        <section className='Gallery'>
-            <div className="Gallery-text">
+        <section className={galleryContainer}>
+            <div className={galleryText}>
                 <h1>
-                    Our <span className='highlight'>Gallery</span>
+                    Our <span className={highlight}>Gallery</span>
                 </h1>
 
                 <p>
@@ -17,20 +17,20 @@ const Gallery = () => {
                     tincidunt eget at felis.
                 </p>
             </div>
-            <div className='Gallery-img'>
-                <div className="Gallery-img1">
+            <div className={galleryImg}>
+                <div className={galleryImg1}>
                     <img src="/images/Gallery1.png" alt="Blog3" />
                 </div>
-                <div className="Gallery-img2">
+                <div className={galleryImg2}>
                     <img src="/images/Gallery2.png" alt="Blog3" />
                 </div>
-                <div className="Gallery-img3">
+                <div className={galleryImg3}>
                     <img src="/images/Gallery3.png" alt="Blog3" />
                 </div>
-                <div className="Gallery-img4">
+                <div className={galleryImg4}>
                     <img src="/images/Gallery4.png" alt="Blog3" />
                 </div>
-                <div className="Gallery-img5">
+                <div className={galleryImg5}>
                     <img src="/images/Gallery5.png" alt="Blog3" />
                 </div>
             </div>

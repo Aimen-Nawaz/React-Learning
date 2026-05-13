@@ -1,0 +1,135 @@
+.conatctSection {
+  padding: 60px, 0;
+  max-width: 1280px;
+  margin: auto;
+  min-height: 100dvh;
+
+}
+
+.contactContainer {
+  text-align: center;
+  margin: auto;
+  max-height: 50%;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 700px;
+  margin-bottom: 10px;
+    color: #1f3b2c;
+}
+
+.title span {
+  color: #22a878;
+}
+
+.subTitle {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+
+.contactBox {
+  display: flex;
+  align-items: center;
+  max-width:1200px;
+  max-height: 550px;
+  align-items: center;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contactImage {
+  max-width: 528px;
+  height: 544px;;
+}
+
+.contactImage img {
+  width: 528px;
+  height: 544px;
+  object-fit: cover;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;;
+}
+
+.contact{
+  width: 574px;
+  height: 544px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.contactForm {
+  max-width: 770px;
+  max-height: 433px;;
+  width: 100%;
+  height: 100%;
+  background: #2db88f;
+  padding: 56px 48px;
+  text-align: left;
+  color: white;
+    border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+}
+
+.contactForm label {
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.contactForm textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contactForm button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 24px 40px;
+  border-radius: 30px;
+  border: none;
+  background: white;
+  color: #2db88f;
+  font-weight: bold;
+  font-size: 22px;;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactForm button:hover {
+  background: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .contactBox {
+    flex-direction: column;
+  }
+
+  .contactImage,
+  .contactForm {
+    width: 100%;
+  }
+}

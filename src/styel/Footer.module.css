@@ -1,13 +1,13 @@
 .footer {
-  background-color: #7ec99d;
+  background-color: #2DA884;
   color: white;
   padding: 60px 0px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1280px;
   margin: auto;
+  width: 100%;
 }
 .footer>div {
   flex: 1;
@@ -23,7 +23,7 @@
 
 
 .footer p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -49,7 +49,7 @@
 }
 
 
-.Follow-us {
+.FollowUs {
   display: flex;
   flex-direction: column;
   align-self: center;

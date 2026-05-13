@@ -1,39 +1,39 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-
+import{choose,chooseImage,chooseText,highlight,chooseList,item} from"../../styel/LandScaping.module.css"
 const Choose = () => {
   return (
-    <section className="choose">
+    <section className={choose}>
 
 
-      <div className="choose-image">
+      <div className={chooseImage}>
         <img src="/images/choose.png" alt="choose us" />
       </div>
 
 
-      <div className="choose-text">
+      <div className={chooseText}>
 
-        <h1>They <span className="highlight"> Choose Us </span> </h1>
+        <h1>They <span className={highlight}> Choose Us </span> </h1>
 
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt voluptatem facilis molestiae dignissimos.
         </p>
 
-        <div className="choose-list">
+        <div className={chooseList}>
 
-          <div className="item">
+          <div className={item}>
             <TiTick /> <span>Expertise</span>
           </div>
 
-          <div className="item">
+          <div className={item}>
             <TiTick /> <span>Timelines</span>
           </div>
 
-          <div className="item">
+          <div className={item}>
             <TiTick /> <span>Customization</span>
           </div>
 
-          <div className="item">
+          <div className={item}>
             <TiTick /> <span>Quality</span>
           </div>
 
