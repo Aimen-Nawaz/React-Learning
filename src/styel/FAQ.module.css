@@ -95,7 +95,7 @@
 @media (max-width: 600px) {
 
     .faqSection {
-        padding: 60px 5%;
+        padding: 60px 0px;
     }
 
     .faqHeading h1 {
@@ -103,11 +103,12 @@
     }
 
     .faqBox {
-        padding: 25px;
+        padding: 10px 5px;
+        border-radius: 20px;
     }
 
     .faqQuestion h2 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .faqQuestion span {

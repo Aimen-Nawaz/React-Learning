@@ -22,6 +22,8 @@ import Gallery from './components/Gallery/Gallery'
 import Testimonial from './components/Testimonial/Testimonial'
 import './styel/Contact.module.css'
 import Contact from './components/Contact/Contact'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Effect from './components/Effect'
 
 
 
@@ -30,18 +32,39 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <PageLayout>
-      <Hero />
-      <About />
-      <Choose />
-      <Services />
-      <Pricing/>
-      <Gallery/>
-      <Testimonial/>
-      <FAQ/>    
-      <Blog/>
-      <Contact/>
+    <BrowserRouter>
+      <PageLayout>
+        <Routes>
+          <Route index element={
+            <>
+              <Hero />
+              <About />
+              <Choose />
+              <Services />
+              <Pricing />
+              <Gallery />
+              <Testimonial />
+              <FAQ />
+              <Blog />
+              <Contact />
+            </>
+          }
+          />
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/choose" element={<Choose />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact-us' element={<Contact />} />
+          <Route path='/effect' element={<Effect />} />
+        </Routes>
       </PageLayout>
+    </BrowserRouter>
   )
 }
 
